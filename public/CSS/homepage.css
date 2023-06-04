@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*navigtion*/
+nav {
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_left, .nav_right {
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_left {
+    width: 50%;
+}
+
+.nav_right {
+    width: 18%;
+}
+
+.nav_left a, .nav_right a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-family: Segoe Script;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav_left a:hover, .nav_right a:hover {
+    color: black;
+}
+
+.nav_left .logo {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav_left .logo h4 {
+    color: black;
+    font-style: italic;
+    font-family: Pristina;
+    font-size: 42px;
+}
+
+.nav_left .logo img {
+    height: 100%;
+}
+
+/*heading*/
+.heading {
+    /*border: 1px solid black;*/
+    font-style: italic;
+    font-family: Pristina;
+    font-size: 50px;
+    animation: 3s logo_text infinite;
+    text-align: center;
+}
+
+@keyframes logo_text {
+    0% {
+        text-shadow: 0 0 10px green, 0 0 20px yellowgreen,0 0 30px yellowgreen, 0 0 40px yellowgreen,0 0 50px yellowgreen, 0 0 60px yellowgreen,0 0 70px yellowgreen, 0 0 80px yellowgreen;
+    }
+
+    50% {
+        text-shadow: 0 0 10px red, 0 0 20px orange,0 0 30px orange, 0 0 40px orange,0 0 50px orange, 0 0 60px orange,0 0 70px orange, 0 0 80px orange;
+    }
+
+    100% {
+        text-shadow: 0 0 10px green, 0 0 20px yellowgreen,0 0 30px yellowgreen, 0 0 40px yellowgreen,0 0 50px yellowgreen, 0 0 60px yellowgreen,0 0 70px yellowgreen, 0 0 80px yellowgreen;
+    }
+}
+
+
+/*section*/
+section {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*About_Us*/
+.About_Us p {
+    font-style: italic;
+    font-family: Pristina;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Packages*/
+.Packages {
+    height: 400px;
+}
+
+.Packages .Four_Packages {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Packages .Gif { 
+    height: 100%;
+    width: 30%;
+    box-shadow: 0px 5px 15px yellowgreen;
+}
+
+.Packages .Four_Packages .Packages_Container {
+    position: relative;
+    cursor: pointer;
+    height: 40%;
+    width: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Packages .Four_Packages .Packages_Container img {
+    position: absolute;
+    border-radius: 10px 10px;
+    background-color: yellowgreen;
+    height: 40%;
+    width: 30%;
+    transform: translateY(-100%);
+}
+
+.Packages .Four_Packages .Packages_Container .Packages_Text {
+    position: absolute;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px yellowgreen;
+}
+
+.Packages .Four_Packages .Packages_Container .Packages_Text h1 {
+    color: yellowgreen;
+    font-style: bold italic;
+    font-family: Pristina;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Packages .Four_Packages .Packages_Container .Packages_Text p {
+    font-style: italic;
+    font-family: Segoe Script;
+    font-size: 15px;
+    text-align: center;
+}
+
+.Packages .Four_Packages .Packages_Container:hover img {
+    visibility: hidden;
+}
+
+.Packages .Four_Packages .Packages_Container:hover .Packages_Text {
+    background-color: yellowgreen;
+    width: 70%;
+    height: 90%;
+    }
+
+.Packages .Four_Packages .Packages_Container:hover .Packages_Text h1 {
+    color: white;
+}
+
+/*footer*/
+#Contact_Us {
+    height: 350px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact_Us .Contact_Us {
+    width: calc(100% - 2px);
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Contact_Us .Contact_Us .contact_us_container {
+    width: 30.5%;
+    height: 80%;
+}
+
+#Contact_Us .Contact_Us .contact_us_container h1 {
+    color: white;
+    font-style: bold italic;
+    font-family: Pristina;
+    font-size: 45px;
+    text-align: center;
+}
+
+#Contact_Us .Contact_Us .contact_us_container p {
+    color: white;
+    font-style: italic;
+    font-family: Segoe Script;
+    font-size: 20px;
+}
+
+#Contact_Us .Contact_Us .contact_us_container p a {
+    text-decoration: none;
+}
+
+#Contact_Us .Contact_Us .contact_us_container p a img {
+    height: 20px;
+    width: 20px;
+}
+
+#Contact_Us .Contact_Us .contact_us_container .follow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Contact_Us .Contact_Us .contact_us_container a {
+    text-decoration: none;
+}
+
+#Contact_Us .Contact_Us .contact_us_container a img {
+    height: 20px;
+    width: 20px;
+}
+
+#Contact_Us .go_top {
+    box-shadow: 5px 5px 15px green;
+    width: calc(100% - 2px);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#Contact_Us .go_top p {
+    color: white;
+    font-family: Pristina;
+    font-size: 38px;
+    transform: translateX(-8%);
+}
+
+#Contact_Us .go_top span {
+    visibility: hidden;
+}
+
+#Contact_Us .go_top a {
+    text-decoration: none;
+}
+
+#Contact_Us .go_top a img {
+    height: 40px;
+    width: 44px;
+    cursor: pointer;
+    transform: translateY(-70%);
+}
